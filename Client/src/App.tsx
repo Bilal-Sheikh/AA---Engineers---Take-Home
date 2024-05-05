@@ -26,7 +26,8 @@ function App() {
         setLoading(true);
         try {
             const response = await axios.post(
-                'http://localhost:3000/get-processed-data',
+                // 'http://localhost:3000/get-processed-data',
+                'https://aa-engineers-take-home.onrender.com/get-processed-data',
                 { poundsAvailable: poundsAvailable },
                 { headers: { 'Content-Type': 'application/json' } }
             );
